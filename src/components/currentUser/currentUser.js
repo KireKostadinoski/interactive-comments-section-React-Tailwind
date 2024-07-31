@@ -18,7 +18,6 @@ const CurrentUser = ({ reply }) => {
   }
 
   function updateEditedComment() {
-    const editedComment = commentToEditRef.current.innerHTML;
 
     commentToEditRef.current.setAttribute('contentEditable', 'false');
     commentToEditRef.current.classList.remove('bg-gray-200');
