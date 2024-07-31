@@ -9,7 +9,7 @@ const TextArea = () => {
   return (
   
   <div className="w-full lg:flex lg:justify-center">
-  <div className="flex flex-col space-y-4 bg-White rounded-xl w-full lg:w-[45%] p-5 mb-4"> 
+  <div className="flex flex-col space-y-4 bg-White rounded-xl w-full lg:w-[50%] p-5 mb-4"> 
      <div><textarea type="text" placeholder="Add a comment..."  className="cursor-pointer p-5 w-full h-32 border-2 border-gray-300 rounded-lg placeholder:text-gray-300"/>
 
      </div>
