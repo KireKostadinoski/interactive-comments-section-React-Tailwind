@@ -28,13 +28,17 @@ const CurrentUser = ({ reply }) => {
   function openModalWindow() {
     const modal = document.getElementById("modal");
 
-    modal.classList.remove("hidden");
+    setTimeout(() => {
+      modal.classList.remove("hidden");
+    }, 500);
   }
 
   function closeModalWindow() {
     const modal = document.getElementById("modal");
 
-    modal.classList.add("hidden");
+    setTimeout(() => {
+      modal.classList.add("hidden");
+    });
   }
 
   function deleteComment() {
