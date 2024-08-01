@@ -38,7 +38,7 @@ const CurrentUser = ({ reply }) => {
 
     setTimeout(() => {
       modal.classList.add("hidden");
-    });
+    }, 500);
   }
 
   function deleteComment() {
