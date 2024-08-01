@@ -39,10 +39,20 @@ const CurrentUser = ({ reply }) => {
   }
 
 
+  function deleteComment() {
+    const userComment = document.getElementById("userComment");
+    const modal = document.getElementById('modal');
+ 
+    setTimeout(() => {
+        modal.classList.add('hidden');
+        userComment.classList.add('hidden');
+    }, 500); // Delay in milliseconds (1000ms = 1 second)
+ }
+ 
   
   return (
     <div className="w-full flex flex-col justify-center items-center relative">
-      <div className="flex flex-col space-y-4 bg-White rounded-xl w-[95%] lg:w-[45%] p-5 mb-4 lg:relative lg:ps-20">
+      <div className="flex flex-col space-y-4 bg-White rounded-xl w-[95%] lg:w-[45%] p-5 mb-4 lg:relative lg:ps-20" id="userComment">
         <div className="flex flex-row items-center space-x-4">
           <img
             src={userImage}
@@ -111,7 +121,7 @@ const CurrentUser = ({ reply }) => {
             <div className="bg-GrayishBlue px-4 py-2 text-White rounded-lg cursor-pointer" onClick={closeModalWindow}>
               NO, CANCEL
             </div>
-            <div className="bg-SoftRed px-4 py-2 text-White rounded-lg cursor-pointer">
+            <div className="bg-SoftRed px-4 py-2 text-White rounded-lg cursor-pointer" onClick={deleteComment}>
               YES, DELETE
             </div>
           </div>
